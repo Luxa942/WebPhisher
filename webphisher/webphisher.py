@@ -27,7 +27,7 @@ def main():
       os.system("sudo apt-get install -y powershell")
       os.system("wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz -O /tmp/ngrok.tgz")
       os.system("sudo tar -xvzf /tmp/ngrok.tgz -C /usr/local/bin")
-      os.system("ngrok config add-authtoken 2jlLQn9tkXSxgz9n7Di37ldHPLL_7YT2kTL6pjtpCp49sPLpu")
+      os.system("ngrok config add-authtoken ")
       main()
     elif bbb == 1:
       print('run ngrok http 8000')
@@ -93,7 +93,7 @@ if os_type == 'posix':
       run_command("sudo apt-get install -y powershell")
       run_command("wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz -O /tmp/ngrok.tgz")
       run_command("sudo tar -xvzf /tmp/ngrok.tgz -C /usr/local/bin")
-      run_command("ngrok config add-authtoken 2jlLQn9tkXSxgz9n7Di37ldHPLL_7YT2kTL6pjtpCp49sPLpu")
+      run_command("ngrok config add-authtoken ")
       main()
       
 elif os_type == 'nt':
@@ -112,7 +112,7 @@ elif os_type == 'nt':
       run_command("sudo apt-get install -y powershell")
       run_command("wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz -O /tmp/ngrok.tgz")
       run_command("sudo tar -xvzf /tmp/ngrok.tgz -C /usr/local/bin")
-      run_command("ngrok config add-authtoken 2jlLQn9tkXSxgz9n7Di37ldHPLL_7YT2kTL6pjtpCp49sPLpu")
+      run_command("ngrok config add-authtoken ")
       main()
 else :
    print("no OS detected")
